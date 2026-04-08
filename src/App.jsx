@@ -7,6 +7,7 @@ function App() {
     <Routes>
       <Route path="/" element={<News />} />
       <Route path="/article" element={<ArticleDetail />} />
+      <Route path="*" element={<h2>404 Page Not Found</h2>} />
     </Routes>
   );
 }

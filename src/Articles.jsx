@@ -40,12 +40,6 @@ export default function Articles({ articles }) {
               </Typography>
             </CardContent>
           </CardActionArea>
-
-          <CardActions>
-            <Button size="small" href={article.url} target="_blank">
-              Read More
-            </Button>
-          </CardActions>
         </Card>
       ))}
     </div>
