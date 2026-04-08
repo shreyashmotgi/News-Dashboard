@@ -5,14 +5,16 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 import "./Articles.css";
 
 export default function Articles({ articles }) {
+  const navigate = useNavigate();
   return (
     <div className="container">
       {articles.map((article) => (
         <Card key={article.id} sx={{  maxWidth: 400 }}>
-          <CardActionArea>
+          <CardActionArea onClick={() => navigate("/article", { state: article })}>
             <CardMedia
               component="img"
               height="200"
