@@ -27,7 +27,7 @@ export default function Articles({ articles }) {
                 {article.title}
               </Typography>
 
-              <Typography variant="body2">{article.description}</Typography>
+              <Typography variant="body2">{article.content}</Typography>
 
               <Typography variant="caption" display="block">
                 Source: {article.source.name}
